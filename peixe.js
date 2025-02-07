@@ -21,12 +21,15 @@ function preload()
 {
     this.load.image('mar', 'assets/bg_azul-claro.png'); //Fundo
     this.load.image('logo', 'assets/logo-inteli_azul.png'); //Logo
+    this.load.image('plantas', 'assets/plantas.png'); //Peixe
     this.load.image('peixe', 'assets/peixes/crustaceo.png'); //Peixe
 }
 
 function create()
 {
     this.add.image(400,300, 'mar'); //Fundo
+    this.add.image(550,525, 'logo').setScale(0.5); //Logo
+    this.add.image(200,450, 'plantas').setScale(0.3); //pedras
     peixinho = this.add.image(400,300, 'peixe'); //Guardar o peixe em uma variavel
     
     peixinho.setFlip(true, false); // Transformando a variável
