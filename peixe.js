@@ -27,7 +27,6 @@ function preload()
 function create()
 {
     this.add.image(400,300, 'mar'); //Fundo
-    this.add.image(400,525, 'logo').setScale(0.5); //Logo
     peixinho = this.add.image(400,300, 'peixe'); //Guardar o peixe em uma variavel
     
     peixinho.setFlip(true, false); // Transformando a variável
