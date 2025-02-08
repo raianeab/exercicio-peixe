@@ -9,7 +9,7 @@ var config =
     {         
         preload: preload, // Função para carregar assets (imagens, sons, etc.)
         create: create,   // Função para criar e configurar objetos na cena
-        update: update    // Função que é chamada a cada frame (atualizações contínuas)
+        update: update    // Função para atualizações contínuas
     }
 };
 
@@ -28,8 +28,8 @@ function preload()
 function create()
 {
     this.add.image(400,300, 'mar'); //Fundo
-    this.add.image(550,525, 'logo').setScale(0.5); //Logo
-    this.add.image(200,450, 'plantas').setScale(0.3); //pedras
+    this.add.image(500,100, 'plantas').setScale(2.0); //pedras
+    this.add.image(565,540, 'logo').setScale(0.5); //Logo
     peixinho = this.add.image(400,300, 'peixe'); //Guardar o peixe em uma variavel
     
     peixinho.setFlip(true, false); // Transformando a variável
